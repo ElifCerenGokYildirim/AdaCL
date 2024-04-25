@@ -29,6 +29,9 @@ When utilizing CIFAR100 for training, the framework will handle the downloading 
 2. Additional parameters related to model optimization, such as batch size, optimization epoch, learning rate decay, weight decay, milestone, and temperature, can be adjusted within the corresponding Python file.
 3. You can edit the hpo related parts such as sampler, n_startup_trials, pruner, and n_trials in the `trainer_ada.py` file.
    
-4. Then run:
+4. Then run for adaptive version:
    ```bash
    python main_ada.py --config=./exps/[MODEL NAME].json
+5. To run fixed version:
+    ```bash
+   python main.py --config=./exps/[MODEL NAME].json
